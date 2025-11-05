@@ -3,7 +3,8 @@
 This repository fine-tunes the Llasa TTS model with GRPO using Hugging Face `transformers`, `trl`, and `datasets`, and evaluates rewards via Whisper ASR and WER.
 
 ### Models
-- **Llasa (policy)**: [HKUSTAudio/Llasa-1B](https://huggingface.co/HKUSTAudio/Llasa-1B)
+- **Llasa**: [HKUSTAudio/Llasa-1B](https://huggingface.co/HKUSTAudio/Llasa-1B)
+- **Llasa finetuned with GRPO**: [HKUSTAudio/Llasa-1B](https://huggingface.co/HKUSTAudio/Llasa-1B)
 - **Neural codec (decode)**: [HKUSTAudio/xcodec2](https://huggingface.co/HKUSTAudio/xcodec2)
 - **ASR reward model**: `openai/whisper-large-v3`
 
