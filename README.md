@@ -4,7 +4,7 @@ This repository fine-tunes the Llasa TTS model with GRPO using Hugging Face `tra
 
 ### Models
 - **Llasa**: [HKUSTAudio/Llasa-1B](https://huggingface.co/HKUSTAudio/Llasa-1B)
-- **Llasa finetuned with GRPO**: [HKUSTAudio/Llasa-1B](https://huggingface.co/HKUSTAudio/Llasa-1B)
+- **Llasa finetuned with GRPO**: [HKUSTAudio/Llasa-1B](https://huggingface.co/Steveeeeeeen/Llasa-1B-GRPO-2000)
 - **Neural codec (decode)**: [HKUSTAudio/xcodec2](https://huggingface.co/HKUSTAudio/xcodec2)
 - **ASR reward model**: `openai/whisper-large-v3`
 
