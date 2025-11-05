@@ -112,10 +112,18 @@ Customizing:
 
 ## Inference
 
-Generate a waveform with the base or fine-tuned checkpoint using `test.py`:
+Generate a waveform with the base or fine-tuned checkpoint using `inference.py`:
 
 ```bash
-python test.py
+python inference.py \
+  --llasa-id Llasa-1B-GRPO/checkpoint-2000 \
+  --codec-id HKUSTAudio/xcodec2 \
+  --text "Hello world from Llasa with GRPO." \
+  --output gen_grpo.wav \
+  --max-length 2048 \
+  --temperature 0.8 \
+  --top-p 1.0 \
+  --device auto
 ```
 
 ## License and usage
