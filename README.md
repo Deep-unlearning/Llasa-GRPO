@@ -74,7 +74,7 @@ To build/publish that dataset yourself, see `create_dataset.py` (encodes audio w
 You can use it like this: 
 
 ```bash
-python /home/steven_huggingface_co/GRPO_Llasa/create_dataset.py \
+python create_dataset.py \
   --dataset-id MrDragonFox/Elise \
   --split train \
   --push-id Steveeeeeeen/Elise-xcodec2 \
@@ -86,7 +86,14 @@ python /home/steven_huggingface_co/GRPO_Llasa/create_dataset.py \
 
 Run the GRPO trainer:
 ```bash
-python train.py
+python train.py \
+  --model-id HKUSTAudio/Llasa-1B \
+  --dataset-id Steveeeeeeen/Elise-xcodec2 \
+  --dataset-split train \
+  --output-dir Llasa-1B-GRPO \
+  --save-steps 500 \
+  --save-total-limit 3 \
+  --max-steps 2000
 ```
 
 What it does (see `train.py`):
